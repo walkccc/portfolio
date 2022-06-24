@@ -12,65 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-themeWhite h-screen p-4 font-fira">
-    <!-- home -->
-    <div class="bg-themeBlack flex flex-col h-full rounded-lg">
+  <body class="bg-themeBlack h-screen p-4 font-fira">
+    <!-- container -->
+    <div
+      class="bg-themeBlack flex flex-col h-full rounded-lg border border-themeLine"
+    >
       <!-- navbar -->
       <div
-        class="flex justify-between h-14 p-4 text-themeGray border-b border-themeLine"
+        class="flex justify-between items-center h-14 p-4 text-themeGray border-b border-themeLine"
       >
         <h3>pengyu-chen</h3>
-        <div id="menu" class="hidden">
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 6H20M4 12H20M4 18H20"
-              stroke="#607B96"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            />
-          </svg>
+        <div class="hidden">
+          <i class="bx bx-menu text-3xl"></i>
         </div>
-        <div id="menu-cross" class="">
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            height="24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g>
-              <line
-                fill="none"
-                stroke="#607B96"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                x1="5"
-                y1="5"
-                x2="19"
-                y2="19"
-              />
-              <line
-                fill="none"
-                stroke="#607B96"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                x1="19"
-                y1="5"
-                x2="5"
-                y2="19"
-              />
-            </g>
-          </svg>
+        <div class="pt-2">
+          <i class="bx bx-x text-3xl"></i>
         </div>
       </div>
       <!-- main body -->
@@ -100,22 +61,54 @@
       </div>
       <!-- END main body -->
       <!-- sidebar menu -->
-      <div class="h-full font-light leading-5">
-        <div class="h-14 p-4 text-themeWhite border-b border-themeLine">
-          <h3>hello</h3>
+      <div class="flex flex-col justify-between h-full font-light leading-5">
+        <div>
+          <div
+            class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
+          >
+            <h3>hello</h3>
+          </div>
+          <div
+            class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
+          >
+            <h3>about-me</h3>
+          </div>
+          <div
+            class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
+          >
+            <h3>experience</h3>
+          </div>
+          <div
+            class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
+          >
+            <h3>education</h3>
+          </div>
         </div>
-        <div class="h-14 p-4 text-themeWhite border-b border-themeLine">
-          <h3>about-me</h3>
-        </div>
-        <div class="h-14 p-4 text-themeWhite border-b border-themeLine">
-          <h3>experience</h3>
-        </div>
-        <div class="h-14 p-4 text-themeWhite border-b border-themeLine">
-          <h3>education</h3>
+        <div
+          class="h-12 flex justify-between items-center text-themeGray border-t border-themeLine"
+        >
+          <h3 class="p-4 text-base font-normal leading-5">find me in:</h3>
+          <div class="w-5/12 h-full flex">
+            <div class="w-1/3">
+              <i
+                class="bx bxl-github p-3 text-2xl border-l border-themeLine"
+              ></i>
+            </div>
+            <div class="w-1/3">
+              <i
+                class="bx bxl-linkedin p-3 text-2xl border-l border-themeLine"
+              ></i>
+            </div>
+            <div class="w-1/3">
+              <i
+                class="bx bxl-twitter p-3 text-2xl border-l border-themeLine"
+              ></i>
+            </div>
+          </div>
         </div>
       </div>
       <!-- END sidebar menu -->
     </div>
-    <!-- END home -->
+    <!-- END container -->
   </body>
 </html>
