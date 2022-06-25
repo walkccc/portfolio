@@ -1,4 +1,4 @@
 ---
-layout: layouts/base.njk
+layout: layouts/container.njk
 year: 2022
 ---
