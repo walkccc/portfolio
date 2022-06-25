@@ -37,7 +37,7 @@
       <!-- main body -->
       <div class="h-full overflow-y-scroll">
         <!-- hero -->
-        <div class="flex flex-col justify-between my-24 h-5/6 p-6">
+        <div class="flex flex-col justify-between my-24 h-5/6 p-6 hidden">
           <div>
             <h3 class="text-lg leading-6 text-themeWhite pl-1 mb-2">
               Hi all. I am
@@ -59,44 +59,58 @@
         </div>
         <!-- END hero -->
         <div class="h-14 pl-6 flex items-center text-themeWhite">about-me</div>
-        <div
-          class="bg-themeLine h-8 pl-6 flex items-center mb-0.5 text-sm text-themeWhite"
-        >
-          <i class="bx bxs-down-arrow mr-2"></i> personal-info
-        </div>
-        <div class="my-2 mx-5 flex items-center text-sm">
-          <i class="bx bx-chevron-right text-xl"></i>
-          <i class="bx bxs-folder mr-2 text-themeRed"></i>bio
-        </div>
-        <div class="my-2 mx-5 flex items-center text-sm">
-          <i class="bx bx-chevron-right text-xl"></i>
-          <i class="bx bxs-folder mr-2 text-themeGreen"></i>interests
-        </div>
-        <div class="my-2 mx-5 flex items-center text-sm">
-          <i class="bx bx-chevron-down text-xl"></i>
-          <i class="bx bxs-folder mr-2 text-themeBlue"></i>education
-        </div>
-        <div class="my-2 mx-11 pl-5 flex items-center text-sm">
-          National Taiwan University
-        </div>
-        <div class="my-2 mx-11 pl-5 flex items-center text-xs leading-none">
-          B.S. in CS 2015 - 2018
-        </div>
-        <div class="my-2 mx-11 pl-5 flex items-center text-sm">
-          New York University
-        </div>
-        <div class="my-2 mx-11 pl-5 flex items-center text-xs leading-none">
-          M.S. in CS 2020 - 2021
-        </div>
-        <div
-          class="bg-themeLine h-8 pl-6 flex items-center mb-0.5 text-sm text-themeWhite"
-        >
-          <i class="bx bxs-right-arrow mr-2"></i> work-experience
-        </div>
-        <div
-          class="bg-themeLine h-8 pl-6 flex items-center mb-0.5 text-sm text-themeWhite"
-        >
-          <i class="bx bxs-right-arrow mr-2"></i> projects
+        <div class="flex flex-col">
+          <div class="bg-themeLine h-8 px-4 flex items-center text-themeWhite">
+            <i
+              class="bx bxs-right-arrow group-hover:rotate-90 transition mr-2"
+            ></i>
+            personal-info
+          </div>
+          <div class="px-4 py-2">
+            <div class="group hover:cursor-pointer flex items-center">
+              <div class="w-12 flex justify-between items-center">
+                <i class="bx bx-chevron-right text-xl"></i>
+                <i class="bx bxs-folder mr-2 text-themeRed"></i>
+              </div>
+              <h3 class="group-hover:text-themeWhite">bio</h3>
+            </div>
+            <div class="group peer hover:cursor-pointer flex items-center">
+              <div class="w-12 flex justify-between items-center">
+                <i
+                  class="bx bx-chevron-right text-xl group-active:rotate-90 transition"
+                ></i>
+                <i class="bx bxs-folder mr-2 text-themeGreen"></i>
+              </div>
+              <h3 class="group-hover:text-themeWhite">education</h3>
+            </div>
+            <div class="hidden peer-active:block transition duration-500">
+              <div class="flex items-center">
+                <div class="w-12 pr-2 flex justify-end items-center">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/National_Taiwan_University_seal.svg/1920px-National_Taiwan_University_seal.svg.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+                National Taiwan University
+              </div>
+              <div class="flex items-center">
+                <div class="w-12 pr-2 flex justify-end items-center">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/New_York_University_Seal.svg/1920px-New_York_University_Seal.svg.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+                New York University
+              </div>
+            </div>
+            <div class="group hover:cursor-pointer flex items-center">
+              <div class="w-12 flex justify-between items-center">
+                <i class="bx bx-chevron-right text-xl"></i>
+                <i class="bx bxs-folder mr-2 text-themeBlue"></i>
+              </div>
+              <h3 class="group-hover:text-themeWhite">interests</h3>
+            </div>
+          </div>
         </div>
       </div>
       <!-- END main body -->
