@@ -18,10 +18,10 @@
     />
   </head>
   <body
-    class="bg-themeBlack text-themeGray h-screen p-4 md:w-2/3 lg:w-5/12 mx-auto font-fira"
+    class="bg-themeBlack text-themeGray h-screen p-2 md:w-2/3 lg:w-5/12 mx-auto font-fira overflow-x-hidden"
   >
     
-<div class="bg-themeBlack flex flex-col h-5/6 mt-14 rounded-lg border border-themeLine">
+<div class="bg-themeBlack flex flex-col h-full">
   <div
   class="flex justify-between items-center h-14 p-4 border-b border-themeLine"
 >
@@ -33,80 +33,7 @@
     <i class="bx bx-x text-3xl"></i>
   </div>
 </div>
-
-  <div id="content" class="h-full overflow-y-scroll">
-  <div
-  id="sidebar"
-  class="flex flex-col justify-between h-full font-light leading-5 transition hidden"
->
-  <div>
-    
-    <div
-      class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
-    >
-      <h3>hello</h3>
-    </div>
-    
-    <div
-      class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
-    >
-      <h3>about-me</h3>
-    </div>
-    
-    <div
-      class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
-    >
-      <h3>experience</h3>
-    </div>
-    
-    <div
-      class="h-14 p-4 flex items-center text-themeWhite border-b border-themeLine"
-    >
-      <h3>education</h3>
-    </div>
-    
-  </div>
-  <div class="h-12 flex justify-between items-center border-t border-themeLine">
-    <h3 class="p-4 text-base font-normal leading-5">find me in:</h3>
-    <div class="w-5/12 h-full flex">
-      
-      <div class="w-1/3">
-        <i
-          class="bx
-          bxl-github
-          p-3
-          text-2xl
-          border-l
-          border-themeLine"
-        ></i>
-      </div>
-      
-      <div class="w-1/3">
-        <i
-          class="bx
-          bxl-linkedin
-          p-3
-          text-2xl
-          border-l
-          border-themeLine"
-        ></i>
-      </div>
-      
-      <div class="w-1/3">
-        <i
-          class="bx
-          bxl-twitter
-          p-3
-          text-2xl
-          border-l
-          border-themeLine"
-        ></i>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
+ <div id="content" class="h-full overflow-y-scroll">
   <div class="flex flex-col justify-between my-24 h-5/6 p-6">
   <div>
     <h3 class="text-lg leading-6 text-themeWhite pl-1 mb-2">Hi all. I am</h3>
@@ -273,7 +200,6 @@
       xIcon.classList.toggle('block');
       sidebar.classList.toggle('hidden');
       sidebar.classList.toggle('block');
-      // content.classList.toggle('overflow-y-scroll');
     };
     menuIcon.addEventListener('click', () => toggleVisibility());
     xIcon.addEventListener('click', () => toggleVisibility());
