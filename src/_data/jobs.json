@@ -7,7 +7,8 @@
     "descriptions": [
       "Design, build, and run a data serving platform that empowers all of Alphabet's speech and audio ML research"
     ],
-    "svg": "/src/svgs/google.svg"
+    "svgName": "google",
+    "color": "themeRed"
   },
   {
     "company": "Snap Inc.",
@@ -19,7 +20,8 @@
       "Sped up the messaging experience in fetching feed and syncing feed by parallelization for 20% through A/B study",
       "Implemented GoogleTest to cover 99% of the business logic in both unit testing and integration testing"
     ],
-    "svg": "/src/svgs/snap.svg"
+    "svgName": "snapchat",
+    "color": "themeYellow"
   },
   {
     "company": "Meta",
@@ -31,6 +33,7 @@
       "Recommended trial numbers to lower the standard deviation of metric values by over 25% for three Jest tests",
       "Tinkered new formula for reasonable trial numbers with senior engineers and reported the process in daily standup"
     ],
-    "svg": "/src/svgs/meta.svg"
+    "svgName": "meta",
+    "color": "themeBlue"
   }
 ]
