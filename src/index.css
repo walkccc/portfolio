@@ -7,7 +7,7 @@
 }
 
 .section__container {
-  @apply flex flex-col px-4 space-y-3;
+  @apply flex flex-col p-4 space-y-3;
 }
 
 .section__summary {
@@ -37,4 +37,8 @@
 
 .section__job-location {
   @apply text-xs font-thin;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
 }

@@ -18,9 +18,25 @@
     />
   </head>
   <body
-    class="bg-themeBlack text-themeGray h-screen p-4 md:w-1/2 lg:w-1/3 mx-auto font-fira overflow-hidden"
+    class="bg-themeBlack text-themeGray h-screen p-4 md:w-2/3 lg:w-5/12 mx-auto font-fira"
   >
     {{ content | safe }}
   </body>
-  <script></script>
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const xIcon = document.getElementById('x-icon');
+    const sidebar = document.getElementById('sidebar');
+    const content = document.getElementById('content');
+    const toggleVisibility = () => {
+      menuIcon.classList.toggle('hidden');
+      menuIcon.classList.toggle('block');
+      xIcon.classList.toggle('hidden');
+      xIcon.classList.toggle('block');
+      sidebar.classList.toggle('hidden');
+      sidebar.classList.toggle('block');
+      // content.classList.toggle('overflow-y-scroll');
+    };
+    menuIcon.addEventListener('click', () => toggleVisibility());
+    xIcon.addEventListener('click', () => toggleVisibility());
+  </script>
 </html>
