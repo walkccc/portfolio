@@ -1,0 +1,12 @@
+[
+  {
+    "summary": "bio",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "color": "themeRed"
+  },
+  {
+    "summary": "interests",
+    "details": "Cras sed felis eget velit aliquet sagittis id. Et odio pellentesque diam volutpat commodo sed egestas. Ut morbi tincidunt augue interdum velit euismod in. Viverra nibh cras pulvinar mattis nunc. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Vitae et leo duis ut diam quam. Mi quis hendrerit dolor magna. Odio ut sem nulla pharetra diam sit.",
+    "color": "themeGreen"
+  }
+]

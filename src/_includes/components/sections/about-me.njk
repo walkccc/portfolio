@@ -1,50 +1,16 @@
-<div class="h-14 pl-6 flex items-center text-themeWhite">about-me</div>
-<div class="flex flex-col">
-  <div class="bg-themeLine h-8 px-4 flex items-center text-themeWhite">
-    <i class="bx bxs-right-arrow group-hover:rotate-90 transition mr-2"></i>
-    personal-info
-  </div>
-  <div class="px-4 py-2">
-    <div class="group hover:cursor-pointer flex items-center">
-      <div class="w-12 flex justify-between items-center">
-        <i class="bx bx-chevron-right text-xl"></i>
-        <i class="bx bxs-folder mr-2 text-themeRed"></i>
+<div class="section__title">about-me</div>
+<div class="section__container">
+  {% for item in aboutMe %}
+  <details class="group" open>
+    <summary class="section__summary">
+      <div class="section__summary__icons">
+        {% include 'components/icons/folder.njk' %}
       </div>
-      <h3 class="group-hover:text-themeWhite">bio</h3>
-    </div>
-    <details class="group">
-      <summary id="education" class="peer hover:cursor-pointer flex items-center">
-        <div class="w-12 flex justify-between items-center">
-          <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
-          <i class="bx bxs-folder mr-2 text-themeGreen"></i>
-        </div>
-        <h3 class="group-hover:text-themeWhite">education</h3>
-      </summary>
-      <div id="schools" class="peer-block transition duration-500">
-        <div class="flex items-center">
-          <div class="w-12 pr-2 flex justify-end items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/National_Taiwan_University_seal.svg/1920px-National_Taiwan_University_seal.svg.png"
-              class="w-4 h-4"/>
-          </div>
-          National Taiwan University
-        </div>
-        <div class="flex items-center">
-          <div class="w-12 pr-2 flex justify-end items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/New_York_University_Seal.svg/1920px-New_York_University_Seal.svg.png"
-              class="w-4 h-4"/>
-          </div>
-          New York University
-        </div>
-      </div>
-    </details>
-    <div class="group hover:cursor-pointer flex items-center">
-      <div class="w-12 flex justify-between items-center">
-        <i class="bx bx-chevron-right text-xl"></i>
-        <i class="bx bxs-folder mr-2 text-themeBlue"></i>
-      </div>
-      <h3 class="group-hover:text-themeWhite">interests</h3>
-    </div>
-  </div>
+      <h3 class="section__summary__title">
+        {{ item.summary }}
+      </h3>
+    </summary>
+    <div class="section__details">{{ item.details }}</div>
+  </details>
+  {% endfor %}
 </div>

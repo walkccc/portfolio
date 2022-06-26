@@ -1,0 +1,27 @@
+<div class="section__title">work-experience</div>
+<div class="section__container">
+  {% for job in jobs %}
+    <details class="group">
+      <summary class="section__summary">
+        <div class="section__summary__icons">
+          {% include 'components/icons/folder.njk' %}
+        </div>
+        <h3 class="section__summary__title">
+          {{ job.company }}
+        </h3>
+      </summary>
+      <div class="section__details">
+        <div class="section__job-title">{{ job.title }}</div>
+        <div class="section__job-date">{{ job.date }}</div>
+        <div class="section__job-location">{{ job.location }}</div>
+        <ul>
+          {% for description in job.descriptions %}
+            <li class="list-disc">
+              {{ description }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </details>
+  {% endfor %}
+</div>
