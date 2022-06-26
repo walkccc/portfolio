@@ -576,10 +576,6 @@ video {
   display: none;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -588,8 +584,8 @@ video {
   height: 100%;
 }
 
-.w-12 {
-  width: 3rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .transform {
@@ -610,12 +606,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -646,26 +636,16 @@ video {
   background-color: rgb(1 22 39 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-6 {
   padding: 1.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .py-36 {
@@ -673,12 +653,9 @@ video {
   padding-bottom: 9rem;
 }
 
-.pl-6 {
+.px-6 {
   padding-left: 1.5rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
+  padding-right: 1.5rem;
 }
 
 .pt-2 {
@@ -691,21 +668,6 @@ video {
 
 .font-fira {
   font-family: 'Fira Code', sans-serif;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-3xl {
@@ -721,6 +683,16 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .leading-6 {
@@ -856,15 +828,6 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
-.hover\:text-themeWhite:hover {
-  --tw-text-opacity: 1;
-  color: rgb(229 233 240 / var(--tw-text-opacity));
-}
-
 .group[open] .group-open\:rotate-90 {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -873,11 +836,6 @@ details summary::-webkit-details-marker {
 @media (min-width: 768px) {
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
