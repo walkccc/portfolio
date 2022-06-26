@@ -8,6 +8,7 @@
       "Design, build, and run a data serving platform that empowers all of Alphabet's speech and audio ML research"
     ],
     "svgName": "google",
+    "svgPath": "svgs/google.svg",
     "color": "themeRed"
   },
   {
@@ -21,6 +22,7 @@
       "Implemented GoogleTest to cover 99% of the business logic in both unit testing and integration testing"
     ],
     "svgName": "snapchat",
+    "svgPath": "svgs/snap.svg",
     "color": "themeYellow"
   },
   {
@@ -34,6 +36,7 @@
       "Tinkered new formula for reasonable trial numbers with senior engineers and reported the process in daily standup"
     ],
     "svgName": "meta",
+    "svgPath": "svgs/meta.svg",
     "color": "themeBlue"
   }
 ]

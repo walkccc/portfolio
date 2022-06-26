@@ -19,7 +19,7 @@
 }
 
 .section__summary__title {
-  @apply hover:text-themeWhite hover:cursor-pointer font-bold;
+  @apply hover:text-themeWhite hover:cursor-pointer font-semibold;
 }
 
 .section__details {
