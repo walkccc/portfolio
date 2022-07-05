@@ -7,7 +7,7 @@
 }
 
 .inner__container {
-  @apply bg-themeBlack flex flex-col h-full;
+  @apply bg-themeGreen flex flex-col h-full;
 }
 
 .section__title {
