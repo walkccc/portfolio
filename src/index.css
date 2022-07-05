@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .outer__container {
-  @apply bg-themeBlack text-themeGray h-screen p-2 md:w-2/3 lg:w-5/12 mx-auto font-fira;
+  @apply bg-themeBlack text-themeGray h-screen p-2 mx-auto font-fira;
 }
 
 .inner__container {
   @apply flex flex-col h-full;
+}
+
+.content__container {
+  @apply h-full lg:w-5/12 mx-auto;
 }
 
 .section__title {
