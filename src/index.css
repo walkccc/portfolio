@@ -15,7 +15,7 @@
 }
 
 .footer__container {
-  @apply h-16  mx-auto flex justify-center items-center text-xs hover:text-themeWhite;
+  @apply h-16 mx-auto flex justify-center items-center text-xs hover:text-themeWhite;
 }
 
 .section__title {
