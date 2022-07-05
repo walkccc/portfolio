@@ -3,10 +3,8 @@
   <head>
     {% include 'components/head.njk' %}
   </head>
-  <body>
-    <div class="outer__container">
-      {{ content | safe }}
-    </div>
+  <body class="outer__container">
+    {{ content | safe }}
   </body>
   {% include 'scripts.njk' %}
 </html>

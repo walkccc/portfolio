@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .outer__container {
-  @apply bg-themeBlack text-themeGray h-screen p-2 md:w-2/3 lg:w-5/12 mx-auto font-fira overflow-hidden;
+  @apply bg-themeBlack text-themeGray h-screen p-2 md:w-2/3 lg:w-5/12 mx-auto font-fira;
 }
 
 .inner__container {
-  @apply bg-themeGreen flex flex-col h-full;
+  @apply flex flex-col h-full;
 }
 
 .section__title {
