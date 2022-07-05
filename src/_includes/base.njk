@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'components/head.njk' %}
+  </head>
+  <body>
+    <div class="portfolio__container">
+      {{ content | safe }}
+    </div>
+  </body>
+  {% include 'scripts.njk' %}
+</html>

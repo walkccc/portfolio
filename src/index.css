@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.portfolio__container {
+  @apply bg-themeBlack text-themeGray h-screen p-2 md:w-2/3 lg:w-5/12 mx-auto font-fira overflow-hidden;
+}
+
 .section__title {
   @apply h-14 pl-6 flex items-center text-xl text-themeWhite;
 }

@@ -1,0 +1,16 @@
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const xIcon = document.getElementById('x-icon');
+  const sidebar = document.getElementById('sidebar');
+  const content = document.getElementById('content');
+  const toggleVisibility = () => {
+    menuIcon.classList.toggle('hidden');
+    menuIcon.classList.toggle('block');
+    xIcon.classList.toggle('hidden');
+    xIcon.classList.toggle('block');
+    sidebar.classList.toggle('hidden');
+    sidebar.classList.toggle('block');
+  };
+  menuIcon.addEventListener('click', () => toggleVisibility());
+  xIcon.addEventListener('click', () => toggleVisibility());
+</script>
