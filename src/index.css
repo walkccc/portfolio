@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .outer__container {
-  @apply bg-themeBlack text-themeGray h-screen p-2 mx-auto font-fira;
+  @apply bg-themeBlack text-themeGray h-full p-2 mx-auto font-fira;
 }
 
 .inner__container {
@@ -12,6 +12,10 @@
 
 .content__container {
   @apply h-full lg:w-5/12 mx-auto;
+}
+
+.footer__container {
+  @apply h-16  mx-auto flex justify-center items-center text-xs hover:text-themeWhite;
 }
 
 .section__title {
