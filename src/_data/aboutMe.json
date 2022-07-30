@@ -1,0 +1,29 @@
+[
+  {
+    "summary": "Bio",
+    "details": [
+      "Hi, I'm Peng-Yu Chen and I grew up in a small island called Penghu in Taiwan. Now, I'm a Software Engineer at Google NYC. Before that, I was pursuing my M.S. in Computer Science at NYU.",
+      "I received my B.S. in Computer Science from National Taiwan University and developed my enthusiasm for software engineering during that time.",
+      "Being fascinated by remarkable software practices and engineering excellence, I always believe in following good coding conventions."
+    ],
+    "color": "themeRed"
+  },
+  {
+    "summary": "Fun Facts",
+    "details": [
+      "Wendy's Chicken is my first meal in the US.",
+      "C is the first programming language I learned.",
+      "C++ is my favorite language though it has many caveats.",
+      "I know a little Japanese.",
+      "I watch animes."
+    ],
+    "color": "themeBlue"
+  },
+  {
+    "summary": "Keywords",
+    "details": [
+      "Coding, Traveling, Workout, Swimming, Walking, Foodie, Reading, Dry weather, Snow."
+    ],
+    "color": "themeGreen"
+  }
+]

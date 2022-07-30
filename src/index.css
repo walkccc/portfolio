@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outer__container {
+  @apply bg-themeBlack text-themeGray h-full p-2 mx-auto font-fira;
+}
+
+.inner__container {
+  @apply flex flex-col h-full;
+}
+
+.content__container {
+  @apply h-full lg:w-2/3 mx-auto;
+}
+
+.footer__container {
+  @apply h-16 mx-auto flex justify-center items-center text-xs hover:text-themeWhite;
+}
+
+.section__title {
+  @apply h-14 pl-6 flex items-center text-xl text-themeWhite;
+}
+
+.section__container {
+  @apply flex flex-col p-4 space-y-3;
+}
+
+.section__summary {
+  @apply flex items-center;
+}
+
+.section__summary__icons {
+  @apply w-12 flex justify-between items-center;
+}
+
+.section__summary__title {
+  @apply hover:text-themeWhite hover:cursor-pointer font-semibold;
+}
+
+.section__details {
+  @apply pl-12 py-1 text-sm md:text-base space-y-1.5;
+}
+
+/* job */
+.section__job-title {
+  @apply font-medium;
+}
+
+.section__job-date {
+  @apply text-xs font-extralight;
+}
+
+.section__job-location {
+  @apply text-xs font-thin;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}

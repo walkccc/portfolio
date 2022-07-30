@@ -1,0 +1,19 @@
+<div id="about-me" class="section__title">About Me</div>
+<div class="section__container">
+  {% for item in aboutMe %}
+  <details class="group" open>
+    <summary class="section__summary">
+      <div class="section__summary__icons">
+        {% include 'components/icons/arrow.njk' %}
+        <i class="bx bxs-folder mr-2 text-{{ item.color }}"></i>
+      </div>
+      <h3 class="section__summary__title">
+        {{ item.summary }}
+      </h3>
+    </summary>
+    {% for detail in item.details %}
+    <div class="section__details">{{ detail }}</div>
+    {% endfor %}
+  </details>
+  {% endfor %}
+</div>

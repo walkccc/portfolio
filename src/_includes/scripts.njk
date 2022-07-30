@@ -1,0 +1,35 @@
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const xIcon = document.getElementById('x-icon');
+  // const sidebar = document.getElementById('sidebar');
+  // const content = document.getElementById('content');
+
+  const toggleVisibility = () => {
+    menuIcon.classList.toggle('hidden');
+    menuIcon.classList.toggle('block');
+    xIcon.classList.toggle('hidden');
+    xIcon.classList.toggle('block');
+    // sidebar.classList.toggle('hidden');
+    // sidebar.classList.toggle('block');
+  };
+  menuIcon.addEventListener('click', () => toggleVisibility());
+  xIcon.addEventListener('click', () => toggleVisibility());
+
+  const scrollToAboutMe = () => {
+    let element = document.getElementById('about-me');
+    element.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start',
+    });
+  };
+
+  const scrollToWorkExp = () => {
+    let element = document.getElementById('work-exp');
+    element.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start',
+    });
+  };
+</script>
