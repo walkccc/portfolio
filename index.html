@@ -25,13 +25,21 @@
   <div
   class="flex justify-between items-center h-14 p-4 lg:w-11/12 lg:mx-auto border-b border-themeLine"
 >
-  <h3>pengyu-chen</h3>
+  <h3>Chen, Peng-Yu</h3>
   <div class="hidden lg:flex justify-between items-center space-x-5">
-    <div id="about-me" class="hover:text-themeWhite">
-      <a href="#about-me">about-me</a>
+    <div
+      id="about-me-item"
+      class="hover:text-themeWhite"
+      onclick="scrollToAboutMe()"
+    >
+      <a href="#about-me">AboutMe</a>
     </div>
-    <div id="work-exp" class="hover:text-themeWhite">
-      <a href="#work-exp">work-exp</a>
+    <div
+      id="work-exp-item"
+      class="hover:text-themeWhite"
+      onclick="scrollToWorkExp()"
+    >
+      <a href="#work-exp">WorkExp</a>
     </div>
     <div id="menu-icon" class="pt-2 block">
       <i class="bx bx-menu text-3xl"></i>
@@ -69,7 +77,7 @@
 
 
   <!-- about me -->
-  <div id="about-me" class="section__title">about-me</div>
+  <div id="about-me" class="section__title">About Me</div>
 <div class="section__container">
   
   <details class="group" open>
@@ -104,7 +112,7 @@
 
 
   <!-- work experience -->
-  <div id="work-exp" class="section__title">work-experience</div>
+  <div id="work-exp" class="section__title">Work Experience</div>
 <div class="section__container">
   
   <details class="group" open>
@@ -339,18 +347,37 @@
   <script>
   const menuIcon = document.getElementById('menu-icon');
   const xIcon = document.getElementById('x-icon');
-  const sidebar = document.getElementById('sidebar');
-  const content = document.getElementById('content');
+  // const sidebar = document.getElementById('sidebar');
+  // const content = document.getElementById('content');
+
   const toggleVisibility = () => {
     menuIcon.classList.toggle('hidden');
     menuIcon.classList.toggle('block');
     xIcon.classList.toggle('hidden');
     xIcon.classList.toggle('block');
-    sidebar.classList.toggle('hidden');
-    sidebar.classList.toggle('block');
+    // sidebar.classList.toggle('hidden');
+    // sidebar.classList.toggle('block');
   };
   menuIcon.addEventListener('click', () => toggleVisibility());
   xIcon.addEventListener('click', () => toggleVisibility());
+
+  const scrollToAboutMe = () => {
+    let element = document.getElementById('about-me');
+    element.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start',
+    });
+  };
+
+  const scrollToWorkExp = () => {
+    let element = document.getElementById('work-exp');
+    element.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'start',
+    });
+  };
 </script>
 
 </html>
