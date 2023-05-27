@@ -2,46 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Peng-Yu Chen</title>
-<link rel="stylesheet" href="tailwind.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-  rel="stylesheet"
-/>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peng-Yu Chen</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-themeBlack text-themeGray h-full p-2 mx-auto font-fira">
-    
-<div class="inner__container">
-  <!-- navbar -->
-  <div
-  class="flex justify-between items-center h-14 p-4 lg:w-11/12 lg:mx-auto border-b border-themeLine"
->
-  <h3>Chen, Peng-Yu</h3>
-  <div class="hidden lg:flex justify-between items-center space-x-5">
-    <div
-      id="about-me-item"
-      class="hover:text-themeWhite"
-      onclick="scrollToAboutMe()"
-    >
-      <a href="#about-me">AboutMe</a>
-    </div>
-    <div
-      id="work-exp-item"
-      class="hover:text-themeWhite"
-      onclick="scrollToWorkExp()"
-    >
-      <a href="#work-exp">WorkExp</a>
-    </div>
-    <!-- TODO(walkccc): Add sidebar animation
+    <div class="inner__container">
+      <!-- navbar -->
+      <div
+        class="flex justify-between items-center h-14 p-4 lg:w-11/12 lg:mx-auto border-b border-themeLine"
+      >
+        <h3>Chen, Peng-Yu</h3>
+        <div class="hidden lg:flex justify-between items-center space-x-5">
+          <div
+            id="about-me-item"
+            class="hover:text-themeWhite"
+            onclick="scrollToAboutMe()"
+          >
+            <a href="#about-me">AboutMe</a>
+          </div>
+          <div
+            id="work-exp-item"
+            class="hover:text-themeWhite"
+            onclick="scrollToWorkExp()"
+          >
+            <a href="#work-exp">WorkExp</a>
+          </div>
+          <!-- TODO(walkccc): Add sidebar animation
     <div id="menu-icon" class="pt-2 block">
       <i class="bx bx-menu text-3xl"></i>
     </div>
@@ -49,113 +47,130 @@
       <i class="bx bx-x text-3xl"></i>
     </div> 
     -->
-  </div>
-</div>
-
-
-  <!-- content -->
-  <div id="content" class="content__container">
-  <!-- hero -->
-  <div class="flex flex-col justify-between px-6 py-36 h-screen">
-  <div>
-    <h3 class="text-lg leading-6 text-themeWhite pl-1 mb-2">Hi all. I am</h3>
-    <h6 class="text-6xl text-themeWhite">Peng-Yu</h6>
-    <h6 class="text-6xl text-themeWhite">Chen</h6>
-    <h3 class="text-lg text-themeGreen pl-1">> Software Engineer</h3>
-  </div>
-  <div class="text-sm space-y-4">
-    <h3>// find my profile on GitHub:</h3>
-    <p class="text-[0px]">
-      <span class="text-themeBlue text-sm">const auto </span>
-      <span class="text-themeGreen text-sm">githubLink </span>
-      <span class="text-themeWhite text-sm">= </span>
-      <a href="https://github.com/walkccc">
-        <span class="text-themeRed text-sm">"https://github.com/walkccc"</span>
-      </a>
-      <span class="text-themeWhite text-sm">;</span>
-    </p>
-  </div>
-</div>
-
-
-  <!-- about me -->
-  <div id="about-me" class="section__title">About Me</div>
-<div class="section__container">
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
-
-        <i class="bx bxs-folder mr-2 text-themeRed"></i>
+        </div>
       </div>
-      <h3 class="section__summary__title">
-        Bio
-      </h3>
-    </summary>
-    
-    <div class="section__details">Hi, I&#39;m Peng-Yu Chen and I grew up in a small island called Penghu in Taiwan. Now, I&#39;m a Software Engineer at Google NYC. Before that, I was pursuing my M.S. in Computer Science at NYU.</div>
-    
-    <div class="section__details">I received my B.S. in Computer Science from National Taiwan University and developed my enthusiasm for software engineering during that time.</div>
-    
-    <div class="section__details">Being fascinated by remarkable software practices and engineering excellence, I always believe in following good coding conventions.</div>
-    
-  </details>
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
 
-        <i class="bx bxs-folder mr-2 text-themeBlue"></i>
-      </div>
-      <h3 class="section__summary__title">
-        Fun Facts
-      </h3>
-    </summary>
-    
-    <div class="section__details">Wendy&#39;s Chicken is my first meal in the US.</div>
-    
-    <div class="section__details">C is the first programming language I learned.</div>
-    
-    <div class="section__details">C++ is my favorite language though it has many caveats.</div>
-    
-    <div class="section__details">I know a little Japanese.</div>
-    
-    <div class="section__details">I watch animes.</div>
-    
-  </details>
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
+      <!-- content -->
+      <div id="content" class="content__container">
+        <!-- hero -->
+        <div class="flex flex-col justify-between px-6 py-36 h-screen">
+          <div>
+            <h3 class="text-lg leading-6 text-themeWhite pl-1 mb-2">
+              Hi all. I am
+            </h3>
+            <h6 class="text-6xl text-themeWhite">Peng-Yu</h6>
+            <h6 class="text-6xl text-themeWhite">Chen</h6>
+            <h3 class="text-lg text-themeGreen pl-1">> Software Engineer</h3>
+          </div>
+          <div class="text-sm space-y-4">
+            <h3>// find my profile on GitHub:</h3>
+            <p class="text-[0px]">
+              <span class="text-themeBlue text-sm">const auto </span>
+              <span class="text-themeGreen text-sm">githubLink </span>
+              <span class="text-themeWhite text-sm">= </span>
+              <a href="https://github.com/walkccc">
+                <span class="text-themeRed text-sm"
+                  >"https://github.com/walkccc"</span
+                >
+              </a>
+              <span class="text-themeWhite text-sm">;</span>
+            </p>
+          </div>
+        </div>
 
-        <i class="bx bxs-folder mr-2 text-themeGreen"></i>
-      </div>
-      <h3 class="section__summary__title">
-        Keywords
-      </h3>
-    </summary>
-    
-    <div class="section__details">Coding, Traveling, Workout, Swimming, Walking, Foodie, Reading, Dry weather, Snow.</div>
-    
-  </details>
-  
-</div>
+        <!-- about me -->
+        <div id="about-me" class="section__title">About Me</div>
+        <div class="section__container">
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
 
+                <i class="bx bxs-folder mr-2 text-themeRed"></i>
+              </div>
+              <h3 class="section__summary__title">Bio</h3>
+            </summary>
 
-  <!-- work experience -->
-  <div id="work-exp" class="section__title">Work Experience</div>
-<div class="section__container">
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
+            <div class="section__details">
+              Hi, I&#39;m Peng-Yu Chen and I grew up in a small island called
+              Penghu in Taiwan. Now, I&#39;m a Software Engineer at Google NYC.
+              Before that, I was pursuing my M.S. in Computer Science at NYU.
+            </div>
 
-        <i class="bx bxl-google text-themeRed mr-2"></i>
-        <!-- <div class="mr-2"><svg
+            <div class="section__details">
+              I received my B.S. in Computer Science from National Taiwan
+              University and developed my enthusiasm for software engineering
+              during that time.
+            </div>
+
+            <div class="section__details">
+              Being fascinated by remarkable software practices and engineering
+              excellence, I always believe in following good coding conventions.
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
+
+                <i class="bx bxs-folder mr-2 text-themeBlue"></i>
+              </div>
+              <h3 class="section__summary__title">Fun Facts</h3>
+            </summary>
+
+            <div class="section__details">
+              Wendy&#39;s Chicken is my first meal in the US.
+            </div>
+
+            <div class="section__details">
+              C is the first programming language I learned.
+            </div>
+
+            <div class="section__details">
+              C++ is my favorite language though it has many caveats.
+            </div>
+
+            <div class="section__details">I know a little Japanese.</div>
+
+            <div class="section__details">I watch animes.</div>
+          </details>
+
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
+
+                <i class="bx bxs-folder mr-2 text-themeGreen"></i>
+              </div>
+              <h3 class="section__summary__title">Keywords</h3>
+            </summary>
+
+            <div class="section__details">
+              Coding, Traveling, Workout, Swimming, Walking, Foodie, Reading,
+              Dry weather, Snow.
+            </div>
+          </details>
+        </div>
+
+        <!-- work experience -->
+        <div id="work-exp" class="section__title">Work Experience</div>
+        <div class="section__container">
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
+
+                <i class="bx bxl-google text-themeRed mr-2"></i>
+                <!-- <div class="mr-2"><svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 24 24"
   width="16"
@@ -181,32 +196,31 @@
   </g>
 </svg>
 </div> -->
-      </div>
-      <h3 class="section__summary__title">
-        Software Engineer
-      </h3>
-    </summary>
-    <div class="section__details">
-      <!-- <div class="section__job-title">Software Engineer</div> -->
-      <div class="section__job-date">June 2022 - Present</div>
-      <div class="section__job-location">New York, NY</div>
-      <ul>
-        
-        <li class="list-disc">
-          Design, build, and run a data serving platform that empowers all of Alphabet&#39;s speech and audio ML research
-        </li>
-        
-      </ul>
-    </div>
-  </details>
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
+              </div>
+              <h3 class="section__summary__title">Software Engineer</h3>
+            </summary>
+            <div class="section__details">
+              <!-- <div class="section__job-title">Software Engineer</div> -->
+              <div class="section__job-date">June 2022 - Present</div>
+              <div class="section__job-location">New York, NY</div>
+              <ul>
+                <li class="list-disc">
+                  Design, build, and run a data serving platform that empowers
+                  all of Alphabet&#39;s speech and audio ML research
+                </li>
+              </ul>
+            </div>
+          </details>
 
-        <i class="bx bxl-snapchat text-themeYellow mr-2"></i>
-        <!-- <div class="mr-2"><svg
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
+
+                <i class="bx bxl-snapchat text-themeYellow mr-2"></i>
+                <!-- <div class="mr-2"><svg
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="16"
@@ -240,40 +254,41 @@
   />
 </svg>
 </div> -->
-      </div>
-      <h3 class="section__summary__title">
-        Software Engineer
-      </h3>
-    </summary>
-    <div class="section__details">
-      <!-- <div class="section__job-title">Software Engineer</div> -->
-      <div class="section__job-date">March 2022 - June 2022</div>
-      <div class="section__job-location">New York, NY</div>
-      <ul>
-        
-        <li class="list-disc">
-          Built messaging infrastructure for a single and consistent logic in C++ to bridge iOS and Android with backend
-        </li>
-        
-        <li class="list-disc">
-          Sped up the messaging experience in fetching feed and syncing feed by parallelization for 20% through A/B study
-        </li>
-        
-        <li class="list-disc">
-          Implemented GoogleTest to cover 99% of the business logic in both unit testing and integration testing
-        </li>
-        
-      </ul>
-    </div>
-  </details>
-  
-  <details class="group" open>
-    <summary class="section__summary">
-      <div class="section__summary__icons">
-        <i class="bx bx-chevron-right text-xl group-open:rotate-90 transition"></i>
+              </div>
+              <h3 class="section__summary__title">Software Engineer</h3>
+            </summary>
+            <div class="section__details">
+              <!-- <div class="section__job-title">Software Engineer</div> -->
+              <div class="section__job-date">March 2022 - June 2022</div>
+              <div class="section__job-location">New York, NY</div>
+              <ul>
+                <li class="list-disc">
+                  Built messaging infrastructure for a single and consistent
+                  logic in C++ to bridge iOS and Android with backend
+                </li>
 
-        <i class="bx bxl-meta text-themeBlue mr-2"></i>
-        <!-- <div class="mr-2"><svg
+                <li class="list-disc">
+                  Sped up the messaging experience in fetching feed and syncing
+                  feed by parallelization for 20% through A/B study
+                </li>
+
+                <li class="list-disc">
+                  Implemented GoogleTest to cover 99% of the business logic in
+                  both unit testing and integration testing
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="group" open>
+            <summary class="section__summary">
+              <div class="section__summary__icons">
+                <i
+                  class="bx bx-chevron-right text-xl group-open:rotate-90 transition"
+                ></i>
+
+                <i class="bx bxl-meta text-themeBlue mr-2"></i>
+                <!-- <div class="mr-2"><svg
   width="16"
   height="16"
   id="Layer_1"
@@ -336,82 +351,77 @@
   />
 </svg>
 </div> -->
+              </div>
+              <h3 class="section__summary__title">Software Engineer Intern</h3>
+            </summary>
+            <div class="section__details">
+              <!-- <div class="section__job-title">Software Engineer Intern</div> -->
+              <div class="section__job-date">May 2021 - August 2021</div>
+              <div class="section__job-location">New York, NY</div>
+              <ul>
+                <li class="list-disc">
+                  Established GraphQL APIs by Hack and created Python scripts
+                  that call the APIs to onboard Jest tests, allowing iOS and
+                  Android developers to have a uniform script to onboard newly
+                  written Jest tests
+                </li>
+
+                <li class="list-disc">
+                  Recommended trial numbers to lower the standard deviation of
+                  metric values by over 25% for three Jest tests
+                </li>
+
+                <li class="list-disc">
+                  Tinkered new formula for reasonable trial numbers with senior
+                  engineers and reported the process in daily standup
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
       </div>
-      <h3 class="section__summary__title">
-        Software Engineer Intern
-      </h3>
-    </summary>
-    <div class="section__details">
-      <!-- <div class="section__job-title">Software Engineer Intern</div> -->
-      <div class="section__job-date">May 2021 - August 2021</div>
-      <div class="section__job-location">New York, NY</div>
-      <ul>
-        
-        <li class="list-disc">
-          Established GraphQL APIs by Hack and created Python scripts that call the APIs to onboard Jest tests, allowing iOS and Android developers to have a uniform script to onboard newly written Jest tests
-        </li>
-        
-        <li class="list-disc">
-          Recommended trial numbers to lower the standard deviation of metric values by over 25% for three Jest tests
-        </li>
-        
-        <li class="list-disc">
-          Tinkered new formula for reasonable trial numbers with senior engineers and reported the process in daily standup
-        </li>
-        
-      </ul>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer__container">
+          <p class="footer__copyright">Built by Peng-Yu Chen © 2022</p>
+        </div>
+      </footer>
     </div>
-  </details>
-  
-</div>
-
-</div>
-
-
-  <!-- footer -->
-  <footer>
-  <div class="footer__container">
-    <p class="footer__copyright">Built by Peng-Yu Chen © 2022</p>
-  </div>
-</footer>
-
-</div>
-
   </body>
   <script>
-  const menuIcon = document.getElementById('menu-icon');
-  const xIcon = document.getElementById('x-icon');
-  // const sidebar = document.getElementById('sidebar');
-  // const content = document.getElementById('content');
+    const menuIcon = document.getElementById('menu-icon');
+    const xIcon = document.getElementById('x-icon');
+    // const sidebar = document.getElementById('sidebar');
+    // const content = document.getElementById('content');
 
-  const toggleVisibility = () => {
-    menuIcon.classList.toggle('hidden');
-    menuIcon.classList.toggle('block');
-    xIcon.classList.toggle('hidden');
-    xIcon.classList.toggle('block');
-    // sidebar.classList.toggle('hidden');
-    // sidebar.classList.toggle('block');
-  };
-  menuIcon.addEventListener('click', () => toggleVisibility());
-  xIcon.addEventListener('click', () => toggleVisibility());
+    const toggleVisibility = () => {
+      menuIcon.classList.toggle('hidden');
+      menuIcon.classList.toggle('block');
+      xIcon.classList.toggle('hidden');
+      xIcon.classList.toggle('block');
+      // sidebar.classList.toggle('hidden');
+      // sidebar.classList.toggle('block');
+    };
+    menuIcon.addEventListener('click', () => toggleVisibility());
+    xIcon.addEventListener('click', () => toggleVisibility());
 
-  const scrollToAboutMe = () => {
-    let element = document.getElementById('about-me');
-    element.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth',
-      inline: 'start',
-    });
-  };
+    const scrollToAboutMe = () => {
+      let element = document.getElementById('about-me');
+      element.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start',
+      });
+    };
 
-  const scrollToWorkExp = () => {
-    let element = document.getElementById('work-exp');
-    element.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth',
-      inline: 'start',
-    });
-  };
-</script>
-
+    const scrollToWorkExp = () => {
+      let element = document.getElementById('work-exp');
+      element.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start',
+      });
+    };
+  </script>
 </html>
