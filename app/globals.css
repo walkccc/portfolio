@@ -31,13 +31,15 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
+    --hover: 217 48% 61%;
+    --highlight: 0 0% 3.9%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 207 95% 8%;
+    --foreground: 210 22% 48%;
 
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -63,6 +65,8 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+    --hover: 0 0% 98%;
+    --highlight: 0 0% 98%;
   }
 }
 

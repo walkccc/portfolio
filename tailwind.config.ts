@@ -1,3 +1,4 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
 import type { Config } from 'tailwindcss';
 
 const config = {
@@ -22,6 +23,8 @@ const config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        hover: 'hsl(var(--hover))',
+        highlight: 'hsl(var(--highlight))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
@@ -52,6 +55,12 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        theme: {
+          red: '#E99287',
+          green: '#43D9AD',
+          blue: '#4D5BCE',
+          gray: '#607B96',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -71,6 +80,10 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      fontFamily: {
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+        heading: ['var(--font-heading)', ...fontFamily.sans],
       },
     },
   },
