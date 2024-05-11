@@ -1,0 +1,3 @@
+prettier . -w
+npx eslint --fix .
+git add -A .
