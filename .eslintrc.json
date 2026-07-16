@@ -1,6 +1,6 @@
 {
   "extends": "next/core-web-vitals",
-  "ignorePatterns": [".next/**", "node_modules/**"],
+  "ignorePatterns": [".next/**", "out/**", "node_modules/**"],
   "plugins": ["simple-import-sort"],
   "rules": {
     "simple-import-sort/imports": "error",

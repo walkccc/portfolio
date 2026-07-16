@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio",
+  "compatibility_date": "2026-07-16",
+  "assets": {
+    "directory": "./out",
+    // Next's static export emits out/404.html for the not-found route.
+    "not_found_handling": "404-page",
+  },
+}
