@@ -1,11 +1,9 @@
-import { Icons } from '@/components/icons';
-
 export interface WorkExperienceItemProps {
   company: string;
   title: string;
   date: string;
   location: string;
-  descriptions: string[];
+  descriptions?: string[];
 }
 
 export function WorkExperienceItem({
@@ -16,36 +14,24 @@ export function WorkExperienceItem({
   descriptions,
 }: WorkExperienceItemProps) {
   return (
-    <details className="group" open>
-      <summary className="flex items-center hover:cursor-pointer hover:text-hover">
-        <div className="flex w-12 items-center justify-around px-1">
-          <Icons.chevronRight
-            size={16}
-            className="transition group-open:rotate-90"
-          />
-          {getSvgIcon(company)}
-        </div>
-        <h3 className="font-medium">{title}</h3>
-      </summary>
-      <div className="space-y-1.5 py-1 pl-12 text-sm md:text-base">
-        <div className="text-xs font-extralight">{date}</div>
-        <div className="text-xs font-thin">{location}</div>
-        <ul>
+    <article className="border-border grid gap-x-8 gap-y-3 border-t py-6 sm:grid-cols-[1fr_auto]">
+      <div>
+        <h3 className="text-[0.9375rem] font-medium">{company}</h3>
+        <p className="text-muted-foreground mt-1.5 text-xs">{title}</p>
+      </div>
+
+      <div className="text-muted-foreground text-xs sm:text-right">
+        <p className="tabular-nums">{date}</p>
+        <p className="mt-1.5">{location}</p>
+      </div>
+
+      {descriptions && descriptions.length > 0 && (
+        <ul className="text-foreground/70 marker:text-border list-outside list-disc space-y-2 pl-4 font-sans text-sm leading-relaxed sm:col-span-2">
           {descriptions.map((description, index) => (
-            <li key={index} className="list-disc">
-              {' '}
-              {description}{' '}
-            </li>
+            <li key={index}>{description}</li>
           ))}
         </ul>
-      </div>
-    </details>
+      )}
+    </article>
   );
-}
-
-function getSvgIcon(svgName: string) {
-  if (svgName === 'GitHub') return <Icons.github width={12} height={12} />;
-  if (svgName === 'Google') return <Icons.google width={12} height={12} />;
-  if (svgName === 'Snap Inc.') return <Icons.snap width={12} height={12} />;
-  if (svgName === 'Meta') return <Icons.meta width={12} height={12} />;
 }

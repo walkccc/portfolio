@@ -6,9 +6,6 @@ export const workExperienceConfig: WorkExperienceItemProps[] = [
     title: 'Software Engineer',
     date: 'June 2022 - Present',
     location: 'New York, NY',
-    descriptions: [
-      "Design, build, and run a data serving platform that empowers all of Alphabet's speech and audio ML research",
-    ],
   },
   {
     company: 'Snap Inc.',

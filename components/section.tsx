@@ -6,11 +6,11 @@ interface SectionProps {
 
 export function Section({ id, title, children }: SectionProps) {
   return (
-    <>
-      <div id={id} className="h-2 text-xl font-medium text-highlight">
+    <section id={id} className="scroll-mt-20">
+      <h2 className="text-muted-foreground text-[0.6875rem] font-medium tracking-[0.2em] uppercase">
         {title}
-      </div>
-      <div className="flex flex-col space-y-3">{children}</div>
-    </>
+      </h2>
+      <div className="mt-6">{children}</div>
+    </section>
   );
 }

@@ -1,38 +1,53 @@
-import { Icons } from '@/components/icons';
-
 export interface AboutMeItemProps {
   title: string;
+  /** Plain text, with optional `[label](href)` links. */
   paragraphs: string[];
-  folderColor: string;
 }
 
-export function AboutMeItem({
-  title,
-  paragraphs,
-  folderColor,
-}: AboutMeItemProps) {
+const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+function renderParagraph(paragraph: string) {
+  const nodes: React.ReactNode[] = [];
+  let cursor = 0;
+
+  for (const match of Array.from(paragraph.matchAll(linkPattern))) {
+    const [markup, label, href] = match;
+    const start = match.index ?? 0;
+    const isExternal = href.startsWith('http');
+
+    if (start > cursor) {
+      nodes.push(paragraph.slice(cursor, start));
+    }
+
+    nodes.push(
+      <a
+        key={start}
+        href={href}
+        {...(isExternal && { target: '_blank', rel: 'noreferrer' })}
+        className="text-foreground decoration-border hover:decoration-foreground underline underline-offset-4 transition-colors"
+      >
+        {label}
+      </a>,
+    );
+
+    cursor = start + markup.length;
+  }
+
+  nodes.push(paragraph.slice(cursor));
+  return nodes;
+}
+
+export function AboutMeItem({ title, paragraphs }: AboutMeItemProps) {
   return (
-    <details className="group" open>
-      <summary className="flex items-center hover:cursor-pointer hover:text-hover">
-        <div className="flex w-12 items-center justify-around px-1">
-          <Icons.chevronRight
-            size={16}
-            className="transition group-open:rotate-90"
-          />
-          <div className={folderColor}>
-            <Icons.folder size={16} />
-          </div>
-        </div>
-        <h3 className="font-medium">{title}</h3>
-      </summary>
-      {paragraphs.map((paragraph, index) => (
-        <div
-          key={index}
-          className="space-y-1.5 py-1 pl-12 text-sm md:text-base"
-        >
-          {paragraph}
-        </div>
-      ))}
-    </details>
+    <div className="border-border grid gap-x-8 gap-y-3 border-t py-6 sm:grid-cols-[7rem_1fr]">
+      <h3 className="text-muted-foreground text-[0.6875rem] tracking-[0.15em] uppercase">
+        {title}
+      </h3>
+      <div className="text-foreground/80 space-y-2.5 font-sans text-sm leading-relaxed">
+        {paragraphs.map((paragraph, index) => (
+          <p key={index}>{renderParagraph(paragraph)}</p>
+        ))}
+      </div>
+    </div>
   );
 }
