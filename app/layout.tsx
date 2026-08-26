@@ -39,6 +39,15 @@ export const metadata: Metadata = {
     },
   ],
   creator: 'Peng-Yu Chen',
+  icons: {
+    // `sizes` on the .ico keeps browsers that understand SVG from preferring it.
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
     url: siteConfig.url,

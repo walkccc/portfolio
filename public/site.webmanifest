@@ -1,0 +1,29 @@
+{
+  "name": "Peng-Yu Chen",
+  "short_name": "Peng-Yu Chen",
+  "description": "Peng-Yu Chen | Software Engineer",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#FAFAF8",
+  "theme_color": "#FAFAF8",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

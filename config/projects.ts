@@ -5,24 +5,24 @@ export const projectsConfig: ProjectItemProps[] = [
     name: 'Zestimer',
     url: 'https://zestimer.com',
     description:
-      'Native iOS HIIT/interval workout timer with voice cues, haptics, and an AI workout builder.',
+      'Illustrated interval timer for home workouts, HIIT, and stretching that turns videos, images, and ideas into guided workouts with AI, animated exercises, voice cues, and haptics.',
   },
   {
     name: 'Furioke',
     url: 'https://furioke.com',
     description:
-      'Turns songs you already stream into Japanese lessons — synced lyrics, furigana, and flashcards on web, iOS, and Android.',
+      'Japanese learning companion that turns songs you already stream into lessons with synced lyrics, furigana, and flashcards on web, iOS, and Android.',
   },
   {
     name: 'Tefuda',
     url: 'https://playtefuda.com',
     description:
-      'Poker solitaire with a push-your-luck streak — place cards, spend your discards wisely, and stack perks to climb levels.',
+      'Poker solitaire game built around push-your-luck streaks, strategic discards, and perks that help you climb through levels.',
   },
   {
-    name: 'Zhuangzi',
-    url: 'https://zhuangzi.magicparklabs.com',
+    name: 'Shaberu',
+    url: 'https://getshaberu.com',
     description:
-      'All thirty-three chapters of the 莊子 in classical Chinese and English, with every line linkable — an iPhone app with a web fallback.',
+      'Dictation tool for Taiwanese Mandarin that turns natural speech with English mixed in into polished 臺灣正體 text on Mac and iPhone.',
   },
 ];
